@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+    - name: jaffle_shop
+      description: This is a replica of the Postgres database used by our app
+      database: raw
+      schema: jaffle_shop
+      tables:
+          - name: product
+            description: It includes id, product name, product group and product category.
+          - name: sales_data
+            description: It includes the data of the product selling in all categories.
