@@ -10,13 +10,18 @@ models:
 
   - name: stg_sales_data
     columns:
-      - name: ordernumber
+      - name: order_id
         tests:
           - not_null
+
+  - name: dimensional_model
+    columns: 
       - name: channel
         tests:
           - accepted_values:
               values:
-                - distributor
-                - online
-                - retail
+                - Distributor
+                - Online
+                - Retail
+
+
